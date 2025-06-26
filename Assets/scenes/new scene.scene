@@ -1175,7 +1175,12 @@
                   "__enabled": true,
                   "AnimationGraph": null,
                   "BodyGroups": 18446744073709551615,
-                  "BoneMergeTarget": null,
+                  "BoneMergeTarget": {
+                    "_type": "component",
+                    "component_id": "fe5a7b3a-11d3-4dd1-aa15-916bf4f508be",
+                    "go": "c9183754-0812-4322-8ce2-35d5196f8a78",
+                    "component_type": "SkinnedModelRenderer"
+                  },
                   "CreateAttachments": false,
                   "CreateBoneObjects": false,
                   "MaterialGroup": null,
@@ -1232,23 +1237,6 @@
               "Children": []
             }
           ]
-        },
-        {
-          "__guid": "c22d3749-0308-4c79-92f7-571b84fb30a9",
-          "__version": 1,
-          "Flags": 0,
-          "Name": "orien",
-          "Position": "0,0,0",
-          "Rotation": "0,0,0,1",
-          "Scale": "1,1,1",
-          "Tags": "",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "NetworkOrphaned": 0,
-          "OwnerTransfer": 1,
-          "Components": [],
-          "Children": []
         }
       ]
     },

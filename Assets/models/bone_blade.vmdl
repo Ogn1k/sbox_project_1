@@ -13,28 +13,14 @@
 						_class = "BoneMarkup"
 						target_bone = "hold_l"
 						ignore_Translation = false
-						ignore_rotation = false
-						do_not_discard = true
-					},
-					{
-						_class = "BoneMarkup"
-						target_bone = "sneath"
-						ignore_Translation = false
-						ignore_rotation = false
+						ignore_rotation = true
 						do_not_discard = true
 					},
 					{
 						_class = "BoneMarkup"
 						target_bone = "hold_r"
 						ignore_Translation = false
-						ignore_rotation = false
-						do_not_discard = true
-					},
-					{
-						_class = "BoneMarkup"
-						target_bone = "sword"
-						ignore_Translation = false
-						ignore_rotation = false
+						ignore_rotation = true
 						do_not_discard = true
 					},
 				]
