@@ -184,7 +184,13 @@
           "OnComponentUpdate": null,
           "PunchCooldown": 0.5,
           "PunchDamage": 10,
-          "PunchRange": 100
+          "PunchRange": 100,
+          "weaponModelrend": {
+            "_type": "component",
+            "component_id": "4824cd87-b8e9-4951-a3f8-39682d3d45d0",
+            "go": "e48c47d6-b999-4dcc-9969-f6d2cca46823",
+            "component_type": "SkinnedModelRenderer"
+          }
         },
         {
           "__type": "EntityComponent",

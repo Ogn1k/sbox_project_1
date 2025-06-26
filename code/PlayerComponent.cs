@@ -20,6 +20,10 @@ public sealed class PlayerComponent : Component
 	public EntityComponent entityComponent { get; set; }
 
 	[Property]
+	[Category( "Components" )]
+	public SkinnedModelRenderer weaponModelrend { get; set; }
+
+	[Property]
 	[Category( "Stats" )]
 	[Range( 50f, 200f, 10f )]
 	public float PunchRange { get; set; } = 100f;
@@ -43,6 +47,7 @@ public sealed class PlayerComponent : Component
 	{
 		ModelRenderer.Set( "holdtype", 6 );
 		ModelRenderer.Set( "b_attack", true );
+		weaponModelrend.Set( "b_attack", true );
 		_resetPose = 3f;
 
 		var punchDirection = Controller.EyeAngles.Forward;
