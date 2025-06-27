@@ -585,7 +585,7 @@
 				{
 					_class = "CBlendAnimNode"
 					m_sName = "Unnamed"
-					m_vecPosition = [ -288.0, 48.0 ]
+					m_vecPosition = [ -304.0, 48.0 ]
 					m_nNodeID = 
 					{
 						m_id = 816429703
@@ -652,10 +652,10 @@
 					m_damping = 
 					{
 						_class = "CAnimInputDamping"
-						m_speedFunction = "NoDamping"
-						m_fSpeedScale = 1.0
+						m_speedFunction = "Spring"
+						m_fSpeedScale = 40.0
 						m_fMinSpeed = 10.0
-						m_fMaxTension = 1000.0
+						m_fMaxTension = 160.0
 						m_fTension = 100.0
 						m_fDamping = 5.0
 					}

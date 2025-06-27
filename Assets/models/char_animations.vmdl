@@ -34,7 +34,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 12
+								take = 29
 								reverse = false
 								anim_hold_list = 
 								[
@@ -82,7 +82,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 17
+								take = 34
 								reverse = false
 							},
 							{
@@ -123,7 +123,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 19
+								take = 36
 								reverse = false
 							},
 							{
@@ -146,7 +146,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 1
+								take = 13
 								reverse = false
 								anim_hold_list = 
 								[
@@ -194,7 +194,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 18
+								take = 35
 								reverse = false
 							},
 							{
@@ -235,7 +235,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 20
+								take = 37
 								reverse = false
 							},
 						]
@@ -274,6 +274,19 @@
 											StringData = ""
 										}
 									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_GENERIC_EVENT"
+										event_frame = 8
+										event_keys = 
+										{
+											TypeName = "trail_spawn"
+											Int = 0
+											Float = 0.0
+											Vector = [ 0.0, 0.0, 0.0 ]
+											StringData = ""
+										}
+									},
 								]
 								activity_name = ""
 								activity_weight = 1
@@ -292,7 +305,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 13
+								take = 30
 								reverse = false
 							},
 							{
@@ -342,7 +355,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 14
+								take = 31
 								reverse = false
 							},
 							{
@@ -392,7 +405,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 15
+								take = 32
 								reverse = false
 							},
 							{
@@ -442,7 +455,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 16
+								take = 33
 								reverse = false
 							},
 						]
@@ -485,10 +498,10 @@
 								disable_interpolation = false
 								enable_scale = false
 								source_filename = "models/char_anims.fbx"
-								start_frame = 0
+								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 2
+								take = 14
 								reverse = false
 							},
 							{
@@ -527,7 +540,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 11
+								take = 28
 								reverse = false
 							},
 						]

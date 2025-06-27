@@ -81,13 +81,14 @@ public sealed class PlayerComponent : Component
 		}
 		else if (eventData.Type == "trail_spawn")
 		{
-			//GameObject trail = TrailPrefab.Clone( WorldPosition );
-			//Component trailComponent = trail.GetComponent(TrailComponent);
-			//trailComponent.height = 10;
-			//trailComponent.trangle = 75;
-			//trailComponent.offangle = 70;
-			//trailComponent.livetime = 0.3;
-			//trailComponent.peak = 0.5;
+			GameObject trail = TrailPrefab.Clone( GameObject, GameObject.WorldPosition, GameObject.WorldRotation, new Vector3(1,1,1) );
+			TrailComponent trailComponent = trail.GetComponent<TrailComponent>();
+			//trailComponent.SetParent(GameObject);
+			trailComponent.height = 80;
+			trailComponent.trangle = 75;
+			trailComponent.offangle = 70;
+			trailComponent.livetime = 0.3f;
+			trailComponent.peak = 0.5f;
 		}
 	}
 
@@ -201,7 +202,7 @@ public sealed class PlayerComponent : Component
 			return;
 
 		animationHelper.WithVelocity( Controller.Velocity );
-		animationHelper.WithWishVelocity( WorldPosition.Normal );
+		animationHelper.WithWishVelocity( Controller.Velocity.Normal );
 		//animationHelper.AimAngle = Head.Transform.Rotation;
     	animationHelper.IsGrounded = Controller.IsOnGround;
 
@@ -209,7 +210,7 @@ public sealed class PlayerComponent : Component
 			return;
 		
 		wepAnimHelper.WithVelocity( Controller.Velocity );
-		wepAnimHelper.WithWishVelocity( WorldPosition.Normal );
+		wepAnimHelper.WithWishVelocity( Controller.Velocity.Normal );
 		//animationHelper.AimAngle = Head.Transform.Rotation;
     	wepAnimHelper.IsGrounded = Controller.IsOnGround;
     
