@@ -28,6 +28,10 @@ public sealed class PlayerComponent : Component
 	public CitizenAnimationHelper wepAnimHelper { get; set; }
 
 	[Property]
+	[Category( "Components" )]
+	public GameObject TrailPrefab { get; set; }
+
+	[Property]
 	[Category( "Stats" )]
 	[Range( 50f, 200f, 10f )]
 	public float PunchRange { get; set; } = 100f;
@@ -74,6 +78,16 @@ public sealed class PlayerComponent : Component
 				{
 				CurCombo += 1;
 				}
+		}
+		else if (eventData.Type == "trail_spawn")
+		{
+			//GameObject trail = TrailPrefab.Clone( WorldPosition );
+			//Component trailComponent = trail.GetComponent(TrailComponent);
+			//trailComponent.height = 10;
+			//trailComponent.trangle = 75;
+			//trailComponent.offangle = 70;
+			//trailComponent.livetime = 0.3;
+			//trailComponent.peak = 0.5;
 		}
 	}
 

@@ -185,6 +185,7 @@
           "PunchCooldown": 0.5,
           "PunchDamage": 10,
           "PunchRange": 100,
+          "TrailPrefab": null,
           "weaponModelrend": {
             "_type": "component",
             "component_id": "4824cd87-b8e9-4951-a3f8-39682d3d45d0",
@@ -488,7 +489,33 @@
                   }
                 }
               ],
-              "Children": []
+              "Children": [
+                {
+                  "__guid": "45ba7819-df58-468c-87d0-9a6695637e36",
+                  "__version": 1,
+                  "__Prefab": "prefabs/attack_trail.prefab",
+                  "__PrefabInstancePatch": {
+                    "AddedObjects": [],
+                    "RemovedObjects": [],
+                    "PropertyOverrides": [
+                      {
+                        "Target": {
+                          "Type": "GameObject",
+                          "IdValue": "fbdd4118-cb3e-4d0a-8388-7591fc43775f"
+                        },
+                        "Property": "Position",
+                        "Value": "0,0,24.86001"
+                      }
+                    ],
+                    "MovedObjects": []
+                  },
+                  "__PrefabIdToInstanceId": {
+                    "fbdd4118-cb3e-4d0a-8388-7591fc43775f": "45ba7819-df58-468c-87d0-9a6695637e36",
+                    "5ae901c5-267d-403e-b7b3-db1e17bf4269": "929139d8-6608-445f-bf23-9880ef7a1cd9",
+                    "366f87a8-b792-40d0-ae65-4ecd4ef7fcc4": "746ef4a2-8998-4432-bca6-ad659ec10e1d"
+                  }
+                }
+              ]
             },
             {
               "__guid": "1e193de3-544e-4da3-b364-c456bf918cb5",
