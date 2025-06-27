@@ -57,6 +57,7 @@
 				[
 					{
 						_class = "RenderMeshFile"
+						name = "blade"
 						filename = "models/blade_mesh.fbx"
 						import_translation = [ 0.0, 0.0, 0.0 ]
 						import_rotation = [ 0.0, 0.0, 0.0 ]
@@ -68,7 +69,53 @@
 						import_filter = 
 						{
 							exclude_by_default = false
-							exception_list = [  ]
+							exception_list = 
+							[
+								"blade_low_sneath",
+								"sneath_low",
+							]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						name = "sneath"
+						filename = "models/blade_mesh.fbx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = 
+							[
+								"blade_low_sneath",
+								"blade_low",
+							]
+						}
+					},
+					{
+						_class = "RenderMeshFile"
+						name = "blade_sneath"
+						filename = "models/blade_mesh.fbx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = 
+							[
+								"blade_low",
+								"sneath_low",
+							]
 						}
 					},
 				]
@@ -335,8 +382,173 @@
 							},
 						]
 					},
+					{
+						_class = "Folder"
+						name = "Misc"
+						children = 
+						[
+							{
+								_class = "AnimFile"
+								name = "blade_deploy"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_CL_BODYGROUP_SET_VALUE"
+										event_frame = 19
+										event_keys = 
+										{
+											bodygroup = "blade"
+											value = 1
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_SV_BODYGROUP_SET_VALUE"
+										event_frame = 19
+										event_keys = 
+										{
+											bodygroup = "blade"
+											value = 1
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/blade_anims.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 2
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "blade_holster"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_CL_BODYGROUP_SET_VALUE"
+										event_frame = 60
+										event_keys = 
+										{
+											bodygroup = "blade"
+											value = 0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_CL_BODYGROUP_SET_VALUE"
+										event_frame = 0
+										event_keys = 
+										{
+											bodygroup = "blade"
+											value = 1
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_SV_BODYGROUP_SET_VALUE"
+										event_frame = 60
+										event_keys = 
+										{
+											bodygroup = "blade"
+											value = 0
+										}
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_SV_BODYGROUP_SET_VALUE"
+										event_frame = 0
+										event_keys = 
+										{
+											bodygroup = "blade"
+											value = 1
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/blade_anims.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 11
+								reverse = false
+							},
+						]
+					},
 				]
 				default_root_bone_name = ""
+			},
+			{
+				_class = "BodyGroupList"
+				children = 
+				[
+					{
+						_class = "BodyGroup"
+						name = "blade"
+						children = 
+						[
+							{
+								_class = "BodyGroupChoice"
+								name = "weapon_sneathed"
+								meshes = 
+								[
+									"blade_sneath",
+								]
+							},
+							{
+								_class = "BodyGroupChoice"
+								name = "weapon_deployed"
+								meshes = 
+								[
+									"blade",
+								]
+							},
+						]
+						hidden_in_tools = true
+					},
+					{
+						_class = "BodyGroup"
+						name = "sneath"
+						children = 
+						[
+							{
+								_class = "BodyGroupChoice"
+								name = "hand"
+								meshes = 
+								[
+									"sneath",
+								]
+							},
+						]
+						hidden_in_tools = true
+					},
+				]
 			},
 		]
 		model_archetype = ""

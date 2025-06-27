@@ -261,6 +261,19 @@
 										root_bone_name = ""
 										motion_type = "Uniform"
 									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_GENERIC_EVENT"
+										event_frame = 14
+										event_keys = 
+										{
+											TypeName = "change_combo"
+											Int = 0
+											Float = 0.0
+											Vector = [ 0.0, 0.0, 0.0 ]
+											StringData = ""
+										}
+									},
 								]
 								activity_name = ""
 								activity_weight = 1
@@ -297,6 +310,19 @@
 										quadratic = false
 										root_bone_name = ""
 										motion_type = "Uniform"
+									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_GENERIC_EVENT"
+										event_frame = 14
+										event_keys = 
+										{
+											TypeName = "change_combo"
+											Int = 0
+											Float = 0.0
+											Vector = [ 0.0, 0.0, 0.0 ]
+											StringData = ""
+										}
 									},
 								]
 								activity_name = ""
@@ -335,6 +361,19 @@
 										root_bone_name = ""
 										motion_type = "Uniform"
 									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_GENERIC_EVENT"
+										event_frame = 14
+										event_keys = 
+										{
+											TypeName = "change_combo"
+											Int = 0
+											Float = 0.0
+											Vector = [ 0.0, 0.0, 0.0 ]
+											StringData = ""
+										}
+									},
 								]
 								activity_name = ""
 								activity_weight = 1
@@ -372,6 +411,19 @@
 										root_bone_name = ""
 										motion_type = "Uniform"
 									},
+									{
+										_class = "AnimEvent"
+										event_class = "AE_GENERIC_EVENT"
+										event_frame = 14
+										event_keys = 
+										{
+											TypeName = "change_combo"
+											Int = 0
+											Float = 0.0
+											Vector = [ 0.0, 0.0, 0.0 ]
+											StringData = ""
+										}
+									},
 								]
 								activity_name = ""
 								activity_weight = 1
@@ -391,6 +443,91 @@
 								end_frame = -1
 								framerate = -1.0
 								take = 16
+								reverse = false
+							},
+						]
+					},
+					{
+						_class = "Folder"
+						name = "misc"
+						children = 
+						[
+							{
+								_class = "AnimFile"
+								name = "char_deploy"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_GENERIC_EVENT"
+										event_frame = 30
+										event_keys = 
+										{
+											TypeName = "change_deploy"
+											Int = 0
+											Float = 0.0
+											Vector = [ 0.0, 0.0, 0.0 ]
+											StringData = ""
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/char_anims.fbx"
+								start_frame = 0
+								end_frame = -1
+								framerate = -1.0
+								take = 2
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "char_holster"
+								children = 
+								[
+									{
+										_class = "AnimEvent"
+										event_class = "AE_GENERIC_EVENT"
+										event_frame = 30
+										event_keys = 
+										{
+											TypeName = "change_deploy"
+											Int = 0
+											Float = 0.0
+											Vector = [ 0.0, 0.0, 0.0 ]
+											StringData = ""
+										}
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/char_anims.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 11
 								reverse = false
 							},
 						]
