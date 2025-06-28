@@ -32,6 +32,10 @@ public sealed class PlayerComponent : Component
 	public GameObject TrailPrefab { get; set; }
 
 	[Property]
+	[Category( "Components" )]
+	public GameObject CameraGameObject { get; set; }
+
+	[Property]
 	[Category( "Stats" )]
 	[Range( 50f, 200f, 10f )]
 	public float PunchRange { get; set; } = 100f;
@@ -56,13 +60,24 @@ public sealed class PlayerComponent : Component
 
 	protected override void OnStart()
 	{
+		_spawnPosition = new Vector3(0, 0, 0);
 		ModelRenderer.OnGenericEvent += HandleGenericEvent;
 		ModelRenderer.OnAnimTagEvent += HandleAnimTagEvent;
 	}
 
 	private void HandleGenericEvent(SceneModel.GenericEvent eventData)
 	{
-		if (eventData.Type == "change_deploy")
+		Vector3 movementDirection = new Vector3(Input.AnalogMove.x, Input.AnalogMove.y, 0);
+        
+        if (CameraGameObject != null)
+        {
+            var cameraRotation = CameraGameObject.WorldRotation;
+            movementDirection = cameraRotation * movementDirection;
+        }
+
+            
+
+		if ( eventData.Type == "change_deploy" )
 		{
 			WepDeployed = !WepDeployed;
 
@@ -81,7 +96,8 @@ public sealed class PlayerComponent : Component
 		}
 		else if (eventData.Type == "trail_spawn")
 		{
-			GameObject trail = TrailPrefab.Clone( GameObject, GameObject.WorldPosition, GameObject.WorldRotation, new Vector3(1,1,1) );
+			movementDirection = movementDirection.Normal;
+			GameObject trail = TrailPrefab.Clone( Controller.GameObject, new Vector3(0,0,0), WorldRotation, new Vector3( 1, 1, 1 ) );
 			TrailComponent trailComponent = trail.GetComponent<TrailComponent>();
 			//trailComponent.SetParent(GameObject);
 			trailComponent.height = 80;
