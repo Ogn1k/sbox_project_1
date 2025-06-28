@@ -16,7 +16,45 @@
 						[
 							{
 								_class = "AnimFile"
+								name = "char_breath_layer"
+								children = 
+								[
+									{
+										_class = "AnimSubtract"
+										anim_name = "char_breath_layer"
+										frame = 0
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = "breath"
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = true
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/char_anims.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 13
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
 								name = "char_idle"
+								children = 
+								[
+									{
+										_class = "AnimAddLayer"
+										anim_name = "char_breath_layer"
+									},
+								]
 								activity_name = ""
 								activity_weight = 1
 								weight_list_name = ""
@@ -34,13 +72,13 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 29
+								take = 33
 								reverse = false
 								anim_hold_list = 
 								[
 									{
 										frame = 0
-										frame_count = 60
+										frame_count = 150
 									},
 								]
 							},
@@ -82,7 +120,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 34
+								take = 38
 								reverse = false
 							},
 							{
@@ -123,7 +161,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 36
+								take = 40
 								reverse = false
 							},
 							{
@@ -148,13 +186,6 @@
 								framerate = -1.0
 								take = 13
 								reverse = false
-								anim_hold_list = 
-								[
-									{
-										frame = 0
-										frame_count = 60
-									},
-								]
 							},
 							{
 								_class = "AnimFile"
@@ -194,7 +225,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 35
+								take = 39
 								reverse = false
 							},
 							{
@@ -235,7 +266,155 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 37
+								take = 41
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "char_flip_forward"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/char_anims.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 17
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "char_flip_back"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/char_anims.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 16
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "char_flip_right"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/char_anims.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 19
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "char_flip_left"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										root_bone_name = ""
+										motion_type = "Uniform"
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/char_anims.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 18
 								reverse = false
 							},
 						]
@@ -246,217 +425,1566 @@
 						children = 
 						[
 							{
-								_class = "AnimFile"
-								name = "char_light_attack1"
+								_class = "Folder"
+								name = "Light_attacks"
 								children = 
 								[
 									{
-										_class = "ExtractMotion"
-										extract_tx = true
-										extract_ty = true
-										extract_tz = false
-										extract_rz = false
-										linear = false
-										quadratic = false
-										root_bone_name = ""
-										motion_type = "Uniform"
+										_class = "AnimFile"
+										name = "char_light_attack1"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = true
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "AnimEvent"
+												event_class = "AE_GENERIC_EVENT"
+												event_frame = 14
+												event_keys = 
+												{
+													TypeName = "change_combo"
+													Int = 0
+													Float = 0.0
+													Vector = [ 0.0, 0.0, 0.0 ]
+													StringData = ""
+												}
+											},
+											{
+												_class = "AnimEvent"
+												event_class = "AE_GENERIC_EVENT"
+												event_frame = 8
+												event_keys = 
+												{
+													TypeName = "trail_spawn"
+													Int = 0
+													Float = 0.0
+													Vector = [ 0.0, 0.0, 0.0 ]
+													StringData = ""
+												}
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 34
+										reverse = false
 									},
 									{
-										_class = "AnimEvent"
-										event_class = "AE_GENERIC_EVENT"
-										event_frame = 14
-										event_keys = 
-										{
-											TypeName = "change_combo"
-											Int = 0
-											Float = 0.0
-											Vector = [ 0.0, 0.0, 0.0 ]
-											StringData = ""
-										}
+										_class = "AnimFile"
+										name = "char_light_attack2"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = true
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "AnimEvent"
+												event_class = "AE_GENERIC_EVENT"
+												event_frame = 14
+												event_keys = 
+												{
+													TypeName = "change_combo"
+													Int = 0
+													Float = 0.0
+													Vector = [ 0.0, 0.0, 0.0 ]
+													StringData = ""
+												}
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 35
+										reverse = false
 									},
 									{
-										_class = "AnimEvent"
-										event_class = "AE_GENERIC_EVENT"
-										event_frame = 8
-										event_keys = 
-										{
-											TypeName = "trail_spawn"
-											Int = 0
-											Float = 0.0
-											Vector = [ 0.0, 0.0, 0.0 ]
-											StringData = ""
-										}
+										_class = "AnimFile"
+										name = "char_light_attack3"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = true
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "AnimEvent"
+												event_class = "AE_GENERIC_EVENT"
+												event_frame = 14
+												event_keys = 
+												{
+													TypeName = "change_combo"
+													Int = 0
+													Float = 0.0
+													Vector = [ 0.0, 0.0, 0.0 ]
+													StringData = ""
+												}
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 36
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_light_attack4"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = true
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+											{
+												_class = "AnimEvent"
+												event_class = "AE_GENERIC_EVENT"
+												event_frame = 14
+												event_keys = 
+												{
+													TypeName = "change_combo"
+													Int = 0
+													Float = 0.0
+													Vector = [ 0.0, 0.0, 0.0 ]
+													StringData = ""
+												}
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 37
+										reverse = false
 									},
 								]
-								activity_name = ""
-								activity_weight = 1
-								weight_list_name = ""
-								fade_in_time = 0.2
-								fade_out_time = 0.2
-								looping = false
-								delta = false
-								worldSpace = false
-								hidden = false
-								anim_markup_ordered = false
-								disable_compression = false
-								disable_interpolation = false
-								enable_scale = false
-								source_filename = "models/char_anims.fbx"
-								start_frame = -1
-								end_frame = -1
-								framerate = -1.0
-								take = 30
-								reverse = false
 							},
 							{
-								_class = "AnimFile"
-								name = "char_light_attack2"
+								_class = "Folder"
+								name = "Heavy_Charged_Attacks"
 								children = 
 								[
 									{
-										_class = "ExtractMotion"
-										extract_tx = true
-										extract_ty = true
-										extract_tz = false
-										extract_rz = false
-										linear = false
-										quadratic = false
-										root_bone_name = ""
-										motion_type = "Uniform"
+										_class = "Folder"
+										name = "Attack_1"
+										children = 
+										[
+											{
+												_class = "AnimFile"
+												name = "char_heavy_attack_1_start"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/char_anims.fbx"
+												start_frame = -1
+												end_frame = 30
+												framerate = -1.0
+												take = 22
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "char_heavy_attack_1_charging"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/char_anims.fbx"
+												start_frame = 31
+												end_frame = -1
+												framerate = 30.0
+												take = 22
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "char_heavy_attack_1_end"
+												children = 
+												[
+													{
+														_class = "ExtractMotion"
+														extract_tx = true
+														extract_ty = true
+														extract_tz = false
+														extract_rz = false
+														linear = false
+														quadratic = false
+														root_bone_name = ""
+														motion_type = "Uniform"
+													},
+												]
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/char_anims.fbx"
+												start_frame = -1
+												end_frame = -1
+												framerate = -1.0
+												take = 20
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "char_heavy_attack_1_end_charged"
+												children = 
+												[
+													{
+														_class = "ExtractMotion"
+														extract_tx = true
+														extract_ty = true
+														extract_tz = false
+														extract_rz = false
+														linear = false
+														quadratic = false
+														root_bone_name = ""
+														motion_type = "Uniform"
+													},
+												]
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/char_anims.fbx"
+												start_frame = -1
+												end_frame = -1
+												framerate = -1.0
+												take = 21
+												reverse = false
+											},
+										]
 									},
 									{
-										_class = "AnimEvent"
-										event_class = "AE_GENERIC_EVENT"
-										event_frame = 14
-										event_keys = 
-										{
-											TypeName = "change_combo"
-											Int = 0
-											Float = 0.0
-											Vector = [ 0.0, 0.0, 0.0 ]
-											StringData = ""
-										}
+										_class = "Folder"
+										name = "Attack_2"
+										children = 
+										[
+											{
+												_class = "AnimFile"
+												name = "char_heavy_attack_2_start"
+												children = 
+												[
+													{
+														_class = "ExtractMotion"
+														extract_tx = true
+														extract_ty = true
+														extract_tz = false
+														extract_rz = false
+														linear = false
+														quadratic = false
+														root_bone_name = ""
+														motion_type = "Uniform"
+													},
+												]
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/char_anims.fbx"
+												start_frame = -1
+												end_frame = 30
+												framerate = -1.0
+												take = 25
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "char_heavy_attack_2_charging"
+												children = 
+												[
+													{
+														_class = "AnimOffset"
+														translation = [ -52.0, 0.0, 0.0 ]
+														rotation_xyz = [ 0.0, 0.0, 0.0 ]
+													},
+												]
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/char_anims.fbx"
+												start_frame = 31
+												end_frame = -1
+												framerate = 30.0
+												take = 25
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "char_heavy_attack_2_end"
+												children = 
+												[
+													{
+														_class = "ExtractMotion"
+														extract_tx = true
+														extract_ty = true
+														extract_tz = false
+														extract_rz = false
+														linear = false
+														quadratic = false
+														root_bone_name = ""
+														motion_type = "Uniform"
+													},
+												]
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/char_anims.fbx"
+												start_frame = -1
+												end_frame = -1
+												framerate = -1.0
+												take = 23
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "char_heavy_attack_2_end_charged"
+												children = 
+												[
+													{
+														_class = "ExtractMotion"
+														extract_tx = true
+														extract_ty = true
+														extract_tz = false
+														extract_rz = false
+														linear = false
+														quadratic = false
+														root_bone_name = ""
+														motion_type = "Uniform"
+													},
+												]
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/char_anims.fbx"
+												start_frame = -1
+												end_frame = -1
+												framerate = -1.0
+												take = 24
+												reverse = false
+											},
+										]
+									},
+									{
+										_class = "Folder"
+										name = "Attack_3"
+										children = 
+										[
+											{
+												_class = "AnimFile"
+												name = "char_heavy_attack_3_start"
+												children = 
+												[
+													{
+														_class = "ExtractMotion"
+														extract_tx = true
+														extract_ty = true
+														extract_tz = false
+														extract_rz = false
+														linear = false
+														quadratic = false
+														root_bone_name = ""
+														motion_type = "Uniform"
+													},
+												]
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/char_anims.fbx"
+												start_frame = -1
+												end_frame = 40
+												framerate = -1.0
+												take = 28
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "char_heavy_attack_3_charging"
+												children = 
+												[
+													{
+														_class = "AnimOffset"
+														translation = [ -15.0, 0.0, 0.0 ]
+														rotation_xyz = [ 0.0, 0.0, 0.0 ]
+													},
+												]
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/char_anims.fbx"
+												start_frame = 41
+												end_frame = -1
+												framerate = 30.0
+												take = 28
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "char_heavy_attack_3_end"
+												children = 
+												[
+													{
+														_class = "ExtractMotion"
+														extract_tx = true
+														extract_ty = true
+														extract_tz = false
+														extract_rz = false
+														linear = false
+														quadratic = false
+														root_bone_name = ""
+														motion_type = "Uniform"
+													},
+												]
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/char_anims.fbx"
+												start_frame = -1
+												end_frame = -1
+												framerate = -1.0
+												take = 26
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "char_heavy_attack_3_end_charged"
+												children = 
+												[
+													{
+														_class = "ExtractMotion"
+														extract_tx = true
+														extract_ty = true
+														extract_tz = false
+														extract_rz = false
+														linear = false
+														quadratic = false
+														root_bone_name = ""
+														motion_type = "Uniform"
+													},
+												]
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/char_anims.fbx"
+												start_frame = -1
+												end_frame = -1
+												framerate = -1.0
+												take = 27
+												reverse = false
+											},
+										]
+									},
+									{
+										_class = "Folder"
+										name = "Attack_4"
+										children = 
+										[
+											{
+												_class = "AnimFile"
+												name = "char_heavy_attack_4_start"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/char_anims.fbx"
+												start_frame = 0
+												end_frame = 40
+												framerate = -1.0
+												take = 31
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "char_heavy_attack_4_charging"
+												children = 
+												[
+													{
+														_class = "AnimOffset"
+														translation = [ -32.0, 0.0, 0.0 ]
+														rotation_xyz = [ 0.0, 0.0, 0.0 ]
+													},
+												]
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/char_anims.fbx"
+												start_frame = 41
+												end_frame = -1
+												framerate = 30.0
+												take = 31
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "char_heavy_attack_4_end"
+												children = 
+												[
+													{
+														_class = "ExtractMotion"
+														extract_tx = true
+														extract_ty = true
+														extract_tz = false
+														extract_rz = false
+														linear = false
+														quadratic = false
+														root_bone_name = ""
+														motion_type = "Uniform"
+													},
+												]
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/char_anims.fbx"
+												start_frame = -1
+												end_frame = -1
+												framerate = -1.0
+												take = 29
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "char_heavy_attack_4_end_charged"
+												children = 
+												[
+													{
+														_class = "ExtractMotion"
+														extract_tx = true
+														extract_ty = true
+														extract_tz = false
+														extract_rz = false
+														linear = false
+														quadratic = false
+														root_bone_name = ""
+														motion_type = "Uniform"
+													},
+												]
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/char_anims.fbx"
+												start_frame = -1
+												end_frame = -1
+												framerate = -1.0
+												take = 30
+												reverse = false
+											},
+										]
 									},
 								]
-								activity_name = ""
-								activity_weight = 1
-								weight_list_name = ""
-								fade_in_time = 0.2
-								fade_out_time = 0.2
-								looping = false
-								delta = false
-								worldSpace = false
-								hidden = false
-								anim_markup_ordered = false
-								disable_compression = false
-								disable_interpolation = false
-								enable_scale = false
-								source_filename = "models/char_anims.fbx"
-								start_frame = -1
-								end_frame = -1
-								framerate = -1.0
-								take = 31
-								reverse = false
 							},
 							{
-								_class = "AnimFile"
-								name = "char_light_attack3"
+								_class = "Folder"
+								name = "Parrys"
 								children = 
 								[
 									{
-										_class = "ExtractMotion"
-										extract_tx = true
-										extract_ty = true
-										extract_tz = false
-										extract_rz = false
-										linear = false
-										quadratic = false
-										root_bone_name = ""
-										motion_type = "Uniform"
+										_class = "AnimFile"
+										name = "char_block"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 9
+										reverse = false
 									},
 									{
-										_class = "AnimEvent"
-										event_class = "AE_GENERIC_EVENT"
-										event_frame = 14
-										event_keys = 
-										{
-											TypeName = "change_combo"
-											Int = 0
-											Float = 0.0
-											Vector = [ 0.0, 0.0, 0.0 ]
-											StringData = ""
-										}
+										_class = "AnimFile"
+										name = "char_block_hit"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 11
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_block_parry"
+										children = 
+										[
+											{
+												_class = "ExtractMotion"
+												extract_tx = true
+												extract_ty = true
+												extract_tz = false
+												extract_rz = false
+												linear = false
+												quadratic = false
+												root_bone_name = ""
+												motion_type = "Uniform"
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 12
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_block_fail"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 10
+										reverse = false
 									},
 								]
-								activity_name = ""
-								activity_weight = 1
-								weight_list_name = ""
-								fade_in_time = 0.2
-								fade_out_time = 0.2
-								looping = false
-								delta = false
-								worldSpace = false
-								hidden = false
-								anim_markup_ordered = false
-								disable_compression = false
-								disable_interpolation = false
-								enable_scale = false
-								source_filename = "models/char_anims.fbx"
-								start_frame = -1
-								end_frame = -1
-								framerate = -1.0
-								take = 32
-								reverse = false
 							},
 							{
-								_class = "AnimFile"
-								name = "char_light_attack4"
+								_class = "Folder"
+								name = "blade_mode"
 								children = 
 								[
 									{
-										_class = "ExtractMotion"
-										extract_tx = true
-										extract_ty = true
-										extract_tz = false
-										extract_rz = false
-										linear = false
-										quadratic = false
-										root_bone_name = ""
-										motion_type = "Uniform"
+										_class = "AnimFile"
+										name = "char_blademode_al_center"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 4
+										end_frame = 4
+										framerate = -1.0
+										take = 0
+										reverse = false
 									},
 									{
-										_class = "AnimEvent"
-										event_class = "AE_GENERIC_EVENT"
-										event_frame = 14
-										event_keys = 
-										{
-											TypeName = "change_combo"
-											Int = 0
-											Float = 0.0
-											Vector = [ 0.0, 0.0, 0.0 ]
-											StringData = ""
-										}
+										_class = "AnimFile"
+										name = "char_blademode_d_c"
+										children = 
+										[
+											{
+												_class = "AnimSubtract"
+												anim_name = "char_blademode_al_center"
+												frame = 0
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = "blademode_aimlayer"
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = true
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 4
+										end_frame = 4
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_d_cl"
+										children = 
+										[
+											{
+												_class = "AnimSubtract"
+												anim_name = "char_blademode_al_center"
+												frame = 0
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = "blademode_aimlayer"
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = true
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 3
+										end_frame = 3
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_d_cr"
+										children = 
+										[
+											{
+												_class = "AnimSubtract"
+												anim_name = "char_blademode_al_center"
+												frame = 0
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = "blademode_aimlayer"
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = true
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 5
+										end_frame = 5
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_d_d"
+										children = 
+										[
+											{
+												_class = "AnimSubtract"
+												anim_name = "char_blademode_al_center"
+												frame = 0
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = "blademode_aimlayer"
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = true
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 1
+										end_frame = 1
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_d_dl"
+										children = 
+										[
+											{
+												_class = "AnimSubtract"
+												anim_name = "char_blademode_al_center"
+												frame = 0
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = "blademode_aimlayer"
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = true
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 0
+										end_frame = 0
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_d_dr"
+										children = 
+										[
+											{
+												_class = "AnimSubtract"
+												anim_name = "char_blademode_al_center"
+												frame = 0
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = "blademode_aimlayer"
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = true
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 2
+										end_frame = 2
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_d_u"
+										children = 
+										[
+											{
+												_class = "AnimSubtract"
+												anim_name = "char_blademode_al_center"
+												frame = 0
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = "blademode_aimlayer"
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = true
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 7
+										end_frame = 7
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_d_ul"
+										children = 
+										[
+											{
+												_class = "AnimSubtract"
+												anim_name = "char_blademode_al_center"
+												frame = 0
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = "blademode_aimlayer"
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = true
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 6
+										end_frame = 6
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_d_ur"
+										children = 
+										[
+											{
+												_class = "AnimSubtract"
+												anim_name = "char_blademode_al_center"
+												frame = 0
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = "blademode_aimlayer"
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = true
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 8
+										end_frame = 8
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_al_l45"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 2
+										end_frame = 2
+										framerate = -1.0
+										take = 1
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_al_l90"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 1
+										end_frame = 1
+										framerate = -1.0
+										take = 1
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_al_l135"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = -1
+										end_frame = 0
+										framerate = -1.0
+										take = 1
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_al_r45"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 4
+										end_frame = 4
+										framerate = -1.0
+										take = 1
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_al_r90"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 5
+										end_frame = 5
+										framerate = -1.0
+										take = 1
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_al_r135"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 6
+										end_frame = 6
+										framerate = -1.0
+										take = 1
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_swipe_l135"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 2
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_swipe_l90"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 3
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_swipe_l45"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 4
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_swipe"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 5
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_swipe_r45"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 6
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_swipe_r90"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 7
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_swipe_r135"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 8
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_aimlayer"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 0
+										end_frame = 8
+										framerate = -1.0
+										take = 0
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "char_blademode_aimmatrix"
+										children = 
+										[
+											{
+												_class = "AnimSubtract"
+												anim_name = "char_blademode_aimlayer"
+												frame = 4
+											},
+										]
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = "blademode_aimlayer"
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = true
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/char_anims.fbx"
+										start_frame = 0
+										end_frame = 8
+										framerate = -1.0
+										take = 0
+										reverse = false
 									},
 								]
-								activity_name = ""
-								activity_weight = 1
-								weight_list_name = ""
-								fade_in_time = 0.2
-								fade_out_time = 0.2
-								looping = false
-								delta = false
-								worldSpace = false
-								hidden = false
-								anim_markup_ordered = false
-								disable_compression = false
-								disable_interpolation = false
-								enable_scale = false
-								source_filename = "models/char_anims.fbx"
-								start_frame = -1
-								end_frame = -1
-								framerate = -1.0
-								take = 33
-								reverse = false
 							},
 						]
 					},
@@ -501,7 +2029,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 14
+								take = 15
 								reverse = false
 							},
 							{
@@ -540,7 +2068,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 28
+								take = 32
 								reverse = false
 							},
 						]
@@ -559,6 +2087,136 @@
 						poseparam_max = 1.0
 						poseparam_looping = false
 						poseparam_loop = 0.0
+					},
+				]
+			},
+			{
+				_class = "WeightListList"
+				children = 
+				[
+					{
+						_class = "WeightList"
+						name = "breath"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "clavicle_L"
+								weight = 0.785311
+							},
+							{
+								bone = "clavicle_R"
+								weight = 0.79096
+							},
+							{
+								bone = "head"
+								weight = 0.99435
+							},
+							{
+								bone = "leg_upper_L"
+								weight = 0.0
+							},
+							{
+								bone = "leg_upper_R"
+								weight = 0.0
+							},
+							{
+								bone = "neck_0"
+								weight = 0.858757
+							},
+							{
+								bone = "pelvis"
+								weight = 0.124294
+							},
+							{
+								bone = "spine_0"
+								weight = 0.299435
+							},
+							{
+								bone = "spine_1"
+								weight = 0.429379
+							},
+							{
+								bone = "spine_2"
+								weight = 0.666667
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
+					},
+					{
+						_class = "WeightList"
+						name = "blademode_aimlayer"
+						default_weight = 0.0
+						weights = 
+						[
+							{
+								bone = "aim_matrix_01"
+								weight = 1.0
+							},
+							{
+								bone = "aim_matrix_02a"
+								weight = 0.0
+							},
+							{
+								bone = "clavicle_L"
+								weight = 0.0
+							},
+							{
+								bone = "clavicle_R"
+								weight = 0.0
+							},
+							{
+								bone = "foot_R_IK_target"
+								weight = 0.0
+							},
+							{
+								bone = "hand_L_IK_attach"
+								weight = 0.0
+							},
+							{
+								bone = "hand_R_IK_attach"
+								weight = 0.0
+							},
+							{
+								bone = "head"
+								weight = 1.0
+							},
+							{
+								bone = "leg_upper_L"
+								weight = 0.212435
+							},
+							{
+								bone = "leg_upper_R"
+								weight = 0.217617
+							},
+							{
+								bone = "neck_0"
+								weight = 1.0
+							},
+							{
+								bone = "pelvis"
+								weight = 0.466321
+							},
+							{
+								bone = "root_IK"
+								weight = 1.0
+							},
+							{
+								bone = "spine_0"
+								weight = 0.668394
+							},
+							{
+								bone = "spine_1"
+								weight = 0.766839
+							},
+							{
+								bone = "spine_2"
+								weight = 0.88601
+							},
+						]
+						master_morph_weight = -1.0
+						morph_weights = [  ]
 					},
 				]
 			},

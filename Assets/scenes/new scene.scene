@@ -138,7 +138,7 @@
       "__version": 1,
       "Flags": 0,
       "Name": "Player",
-      "Position": "-173.931,-102.312,-1.002266",
+      "Position": "0,0,0",
       "Rotation": "0,0,0,1",
       "Scale": "1,1,1",
       "Tags": "",
@@ -170,6 +170,10 @@
             "go": "0282d343-d4ca-4746-8ec1-efe9b9b02fa1",
             "component_type": "EntityComponent"
           },
+          "FatBody": {
+            "_type": "gameobject",
+            "go": "c9183754-0812-4322-8ce2-35d5196f8a78"
+          },
           "ModelRenderer": {
             "_type": "component",
             "component_id": "fe5a7b3a-11d3-4dd1-aa15-916bf4f508be",
@@ -185,7 +189,10 @@
           "PunchCooldown": 0.5,
           "PunchDamage": 10,
           "PunchRange": 100,
-          "TrailPrefab": null,
+          "TrailPrefab": {
+            "_type": "gameobject",
+            "prefab": "prefabs/attack_trail.prefab"
+          },
           "weaponModelrend": {
             "_type": "component",
             "component_id": "4824cd87-b8e9-4951-a3f8-39682d3d45d0",
@@ -250,7 +257,7 @@
           "__version": 1,
           "Flags": 0,
           "Name": "Player controller",
-          "Position": "157.3772,82.86007,18.46436",
+          "Position": "0,0,0",
           "Rotation": "0,0,0,1",
           "Scale": "1,1,1",
           "Tags": "",
@@ -505,6 +512,30 @@
                         },
                         "Property": "Position",
                         "Value": "0,0,24.86001"
+                      },
+                      {
+                        "Target": {
+                          "Type": "Component",
+                          "IdValue": "366f87a8-b792-40d0-ae65-4ecd4ef7fcc4"
+                        },
+                        "Property": "offangle",
+                        "Value": 100
+                      },
+                      {
+                        "Target": {
+                          "Type": "Component",
+                          "IdValue": "366f87a8-b792-40d0-ae65-4ecd4ef7fcc4"
+                        },
+                        "Property": "rotSpeed",
+                        "Value": 0.3
+                      },
+                      {
+                        "Target": {
+                          "Type": "Component",
+                          "IdValue": "366f87a8-b792-40d0-ae65-4ecd4ef7fcc4"
+                        },
+                        "Property": "trangle",
+                        "Value": 45
                       }
                     ],
                     "MovedObjects": []

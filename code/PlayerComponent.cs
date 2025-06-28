@@ -34,6 +34,7 @@ public sealed class PlayerComponent : Component
 	[Property]
 	[Category( "Components" )]
 	public GameObject CameraGameObject { get; set; }
+	public GameObject FatBody { get; set; }
 
 	[Property]
 	[Category( "Stats" )]
@@ -51,6 +52,7 @@ public sealed class PlayerComponent : Component
 	public float PunchCooldown { get; set; } = 0.5f;
 
 	public TimeUntil NextPunch;
+	public TimeUntil NextFlip;
 	public bool WepDeployed { get; set; } = false;
 	public int CurCombo { get; set; } = 0;
 	public bool CanCombo { get; set; } = false;
@@ -99,10 +101,9 @@ public sealed class PlayerComponent : Component
 			movementDirection = movementDirection.Normal;
 			GameObject trail = TrailPrefab.Clone( Controller.GameObject, new Vector3(0,0,0), WorldRotation, new Vector3( 1, 1, 1 ) );
 			TrailComponent trailComponent = trail.GetComponent<TrailComponent>();
-			//trailComponent.SetParent(GameObject);
-			trailComponent.height = 80;
-			trailComponent.trangle = 75;
-			trailComponent.offangle = 70;
+			trailComponent.height = 50f;
+			trailComponent.trangle = 45f;
+			trailComponent.offangle = 75f;
 			trailComponent.livetime = 0.3f;
 			trailComponent.peak = 0.5f;
 		}
@@ -234,7 +235,12 @@ public sealed class PlayerComponent : Component
 
 	protected override void OnFixedUpdate()
 	{
-		if ( Input.Down( "attack1" ) )
+		if ( Input.Down( "duck" ) && NextPunch )
+			{
+				SharedParams("b_flip", true);
+				NextPunch = PunchCooldown;
+			}
+		else if ( Input.Down( "attack1" ) )
 			{
 			if (!NextPunch && CanCombo)
 				{
@@ -251,13 +257,12 @@ public sealed class PlayerComponent : Component
 				}
 			}
 
-		if ( Input.Down( "reload" ) && NextPunch )
+		else if ( Input.Down( "reload" ) && NextPunch )
 		{
 			DeploySword();
 			NextPunch = PunchCooldown;
 		}
-		//if ( _resetPose )
-			//ModelRenderer.Set( "holdtype", 0 );
+
 		UpdateAnimation();
 	}
 }

@@ -156,7 +156,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 35
+								take = 40
 								reverse = false
 							},
 							{
@@ -179,13 +179,13 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 28
+								take = 33
 								reverse = false
 								anim_hold_list = 
 								[
 									{
 										frame = 0
-										frame_count = 60
+										frame_count = 120
 									},
 								]
 							},
@@ -209,7 +209,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 36
+								take = 41
 								reverse = false
 							},
 							{
@@ -232,7 +232,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 33
+								take = 38
 								reverse = false
 							},
 							{
@@ -255,7 +255,7 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 34
+								take = 39
 								reverse = false
 							},
 							{
@@ -278,15 +278,107 @@
 								start_frame = -1
 								end_frame = -1
 								framerate = -1.0
-								take = 13
+								take = 14
 								reverse = false
 								anim_hold_list = 
 								[
 									{
 										frame = 0
-										frame_count = 60
+										frame_count = 120
 									},
 								]
+							},
+							{
+								_class = "AnimFile"
+								name = "blade_flip_forward"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/blade_anims.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 17
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "blade_flip_back"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/blade_anims.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 16
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "blade_flip_right"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/blade_anims.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 19
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "blade_flip_left"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/blade_anims.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 18
+								reverse = false
 							},
 						]
 					},
@@ -296,96 +388,697 @@
 						children = 
 						[
 							{
-								_class = "AnimFile"
-								name = "blade_light_attack1"
-								activity_name = ""
-								activity_weight = 1
-								weight_list_name = ""
-								fade_in_time = 0.2
-								fade_out_time = 0.2
-								looping = false
-								delta = false
-								worldSpace = false
-								hidden = false
-								anim_markup_ordered = false
-								disable_compression = false
-								disable_interpolation = false
-								enable_scale = false
-								source_filename = "models/blade_anims.fbx"
-								start_frame = -1
-								end_frame = -1
-								framerate = -1.0
-								take = 29
-								reverse = false
+								_class = "Folder"
+								name = "Light"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "blade_light_attack1"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/blade_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 34
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "blade_light_attack2"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/blade_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 35
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "blade_light_attack3"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/blade_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 36
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "blade_light_attack4"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/blade_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 37
+										reverse = false
+									},
+								]
 							},
 							{
-								_class = "AnimFile"
-								name = "blade_light_attack2"
-								activity_name = ""
-								activity_weight = 1
-								weight_list_name = ""
-								fade_in_time = 0.2
-								fade_out_time = 0.2
-								looping = false
-								delta = false
-								worldSpace = false
-								hidden = false
-								anim_markup_ordered = false
-								disable_compression = false
-								disable_interpolation = false
-								enable_scale = false
-								source_filename = "models/blade_anims.fbx"
-								start_frame = -1
-								end_frame = -1
-								framerate = -1.0
-								take = 30
-								reverse = false
+								_class = "Folder"
+								name = "Heavy"
+								children = 
+								[
+									{
+										_class = "Folder"
+										name = "attack1"
+										children = 
+										[
+											{
+												_class = "AnimFile"
+												name = "blade_heavy_attack_pre_1"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/blade_anims.fbx"
+												start_frame = -1
+												end_frame = 30
+												framerate = -1.0
+												take = 22
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "blade_heavy_attack_charge_1"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/blade_anims.fbx"
+												start_frame = 31
+												end_frame = -1
+												framerate = 30.0
+												take = 22
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "blade_heavy_attack_end_1"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/blade_anims.fbx"
+												start_frame = -1
+												end_frame = -1
+												framerate = -1.0
+												take = 20
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "blade_heavy_attack_end_charged_1"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/blade_anims.fbx"
+												start_frame = -1
+												end_frame = -1
+												framerate = -1.0
+												take = 21
+												reverse = false
+											},
+										]
+									},
+									{
+										_class = "Folder"
+										name = "attack2"
+										children = 
+										[
+											{
+												_class = "AnimFile"
+												name = "blade_heavy_attack_pre_2"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/blade_anims.fbx"
+												start_frame = 0
+												end_frame = 30
+												framerate = -1.0
+												take = 25
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "blade_heavy_attack_charge_2"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/blade_anims.fbx"
+												start_frame = 31
+												end_frame = -1
+												framerate = 30.0
+												take = 25
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "blade_heavy_attack_end_2"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/blade_anims.fbx"
+												start_frame = -1
+												end_frame = -1
+												framerate = -1.0
+												take = 23
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "blade_heavy_attack_end_charged_2"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/blade_anims.fbx"
+												start_frame = -1
+												end_frame = -1
+												framerate = -1.0
+												take = 24
+												reverse = false
+											},
+										]
+									},
+									{
+										_class = "Folder"
+										name = "attack3"
+										children = 
+										[
+											{
+												_class = "AnimFile"
+												name = "blade_heavy_attack_pre_3"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/blade_anims.fbx"
+												start_frame = -1
+												end_frame = 40
+												framerate = -1.0
+												take = 28
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "blade_heavy_attack_charge_3"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/blade_anims.fbx"
+												start_frame = 41
+												end_frame = -1
+												framerate = 30.0
+												take = 28
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "blade_heavy_attack_end_3"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/blade_anims.fbx"
+												start_frame = -1
+												end_frame = -1
+												framerate = -1.0
+												take = 26
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "blade_heavy_attack_end_charged_3"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/blade_anims.fbx"
+												start_frame = -1
+												end_frame = -1
+												framerate = -1.0
+												take = 27
+												reverse = false
+											},
+										]
+									},
+									{
+										_class = "Folder"
+										name = "attack4"
+										children = 
+										[
+											{
+												_class = "AnimFile"
+												name = "blade_heavy_attack_pre_4"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/blade_anims.fbx"
+												start_frame = -1
+												end_frame = 40
+												framerate = -1.0
+												take = 31
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "blade_heavy_attack_charge_4"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/blade_anims.fbx"
+												start_frame = 41
+												end_frame = -1
+												framerate = 30.0
+												take = 31
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "blade_heavy_attack_end_4"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/blade_anims.fbx"
+												start_frame = -1
+												end_frame = -1
+												framerate = -1.0
+												take = 29
+												reverse = false
+											},
+											{
+												_class = "AnimFile"
+												name = "blade_heavy_attack_end_charged_4"
+												activity_name = ""
+												activity_weight = 1
+												weight_list_name = ""
+												fade_in_time = 0.2
+												fade_out_time = 0.2
+												looping = false
+												delta = false
+												worldSpace = false
+												hidden = false
+												anim_markup_ordered = false
+												disable_compression = false
+												disable_interpolation = false
+												enable_scale = false
+												source_filename = "models/blade_anims.fbx"
+												start_frame = -1
+												end_frame = -1
+												framerate = -1.0
+												take = 30
+												reverse = false
+											},
+										]
+									},
+								]
 							},
 							{
-								_class = "AnimFile"
-								name = "blade_light_attack3"
-								activity_name = ""
-								activity_weight = 1
-								weight_list_name = ""
-								fade_in_time = 0.2
-								fade_out_time = 0.2
-								looping = false
-								delta = false
-								worldSpace = false
-								hidden = false
-								anim_markup_ordered = false
-								disable_compression = false
-								disable_interpolation = false
-								enable_scale = false
-								source_filename = "models/blade_anims.fbx"
-								start_frame = -1
-								end_frame = -1
-								framerate = -1.0
-								take = 31
-								reverse = false
-							},
-							{
-								_class = "AnimFile"
-								name = "blade_light_attack4"
-								activity_name = ""
-								activity_weight = 1
-								weight_list_name = ""
-								fade_in_time = 0.2
-								fade_out_time = 0.2
-								looping = false
-								delta = false
-								worldSpace = false
-								hidden = false
-								anim_markup_ordered = false
-								disable_compression = false
-								disable_interpolation = false
-								enable_scale = false
-								source_filename = "models/blade_anims.fbx"
-								start_frame = -1
-								end_frame = -1
-								framerate = -1.0
-								take = 32
-								reverse = false
+								_class = "Folder"
+								name = "blade_mode"
+								children = 
+								[
+									{
+										_class = "AnimFile"
+										name = "blade_blademode_idle"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = true
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/blade_anims.fbx"
+										start_frame = 3
+										end_frame = 3
+										framerate = -1.0
+										take = 1
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "blade_blademode_swipe_l135"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/blade_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 2
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "blade_blademode_swipe_l90"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/blade_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 3
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "blade_blademode_swipe_l45"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/blade_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 4
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "blade_blademode_swipe"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/blade_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 5
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "blade_blademode_swipe_r45"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/blade_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 6
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "blade_blademode_swipe_r90"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/blade_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 7
+										reverse = false
+									},
+									{
+										_class = "AnimFile"
+										name = "blade_blademode_swipe_r135"
+										activity_name = ""
+										activity_weight = 1
+										weight_list_name = ""
+										fade_in_time = 0.2
+										fade_out_time = 0.2
+										looping = false
+										delta = false
+										worldSpace = false
+										hidden = false
+										anim_markup_ordered = false
+										disable_compression = false
+										disable_interpolation = false
+										enable_scale = false
+										source_filename = "models/blade_anims.fbx"
+										start_frame = -1
+										end_frame = -1
+										framerate = -1.0
+										take = 8
+										reverse = false
+									},
+								]
 							},
 						]
 					},
@@ -504,6 +1197,98 @@
 								end_frame = -1
 								framerate = -1.0
 								take = 27
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "blade_block"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/blade_anims.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 9
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "blade_block_fail"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/blade_anims.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 10
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "blade_block_hit"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/blade_anims.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 11
+								reverse = false
+							},
+							{
+								_class = "AnimFile"
+								name = "blade_block_parry"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								disable_interpolation = false
+								enable_scale = false
+								source_filename = "models/blade_anims.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 12
 								reverse = false
 							},
 						]
