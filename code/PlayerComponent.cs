@@ -32,6 +32,10 @@ public sealed class PlayerComponent : Component
 	public GameObject TrailPrefab { get; set; }
 
 	[Property]
+	[Category( "Components" )]
+	public GameObject FatBody { get; set; }
+
+	[Property]
 	[Category( "Stats" )]
 	[Range( 50f, 200f, 10f )]
 	public float PunchRange { get; set; } = 100f;
@@ -47,6 +51,7 @@ public sealed class PlayerComponent : Component
 	public float PunchCooldown { get; set; } = 0.5f;
 
 	public TimeUntil NextPunch;
+	public TimeUntil NextFlip;
 	public bool WepDeployed { get; set; } = false;
 	public int CurCombo { get; set; } = 0;
 	public bool CanCombo { get; set; } = false;
@@ -81,12 +86,14 @@ public sealed class PlayerComponent : Component
 		}
 		else if (eventData.Type == "trail_spawn")
 		{
-			GameObject trail = TrailPrefab.Clone( GameObject, GameObject.WorldPosition, GameObject.WorldRotation, new Vector3(1,1,1) );
+			//GameObject trail = TrailPrefab.Clone( GameObject, GameObject.LocalPosition, GameObject.LocalRotation, new Vector3(1,1,1) );
+			GameObject trail = TrailPrefab.Clone();
+			trail.SetParent(FatBody);
+			trail.LocalPosition = LocalPosition;
 			TrailComponent trailComponent = trail.GetComponent<TrailComponent>();
-			//trailComponent.SetParent(GameObject);
-			trailComponent.height = 80;
-			trailComponent.trangle = 75;
-			trailComponent.offangle = 70;
+			trailComponent.height = 50f;
+			trailComponent.trangle = 45f;
+			trailComponent.offangle = 75f;
 			trailComponent.livetime = 0.3f;
 			trailComponent.peak = 0.5f;
 		}
@@ -218,7 +225,12 @@ public sealed class PlayerComponent : Component
 
 	protected override void OnFixedUpdate()
 	{
-		if ( Input.Down( "attack1" ) )
+		if ( Input.Down( "duck" ) && NextPunch )
+			{
+				SharedParams("b_flip", true);
+				NextPunch = PunchCooldown;
+			}
+		else if ( Input.Down( "attack1" ) )
 			{
 			if (!NextPunch && CanCombo)
 				{
@@ -235,13 +247,12 @@ public sealed class PlayerComponent : Component
 				}
 			}
 
-		if ( Input.Down( "reload" ) && NextPunch )
+		else if ( Input.Down( "reload" ) && NextPunch )
 		{
 			DeploySword();
 			NextPunch = PunchCooldown;
 		}
-		//if ( _resetPose )
-			//ModelRenderer.Set( "holdtype", 0 );
+
 		UpdateAnimation();
 	}
 }

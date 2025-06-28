@@ -23,6 +23,10 @@ public sealed class TrailComponent : Component
 	[Category( "Start Params" )]
 	public float peak { get; set; } = 0.6f;
 
+	[Property]
+	[Category( "Start Params" )]
+	public float rotSpeed { get; set; } = 1f;
+
 	public TimeUntil DieTime;
 	private SkinnedModelRenderer TrailRender;
 	public float RotatePerFrame { get; set; } = 0f;
@@ -41,7 +45,7 @@ public sealed class TrailComponent : Component
 		var newAng = new Angles(0,offangle,trangle);
 		GameObject.LocalRotation = newAng;
 
-		RotatePerFrame = -2;
+		TrailRender.Set( "speed", rotSpeed );
 
 		DieTime = livetime;
 	}
@@ -49,10 +53,6 @@ public sealed class TrailComponent : Component
 	protected override void OnUpdate()
 	{
 		if ( !GameObject.IsValid() ) return;
-
-		var extraang = new Angles(0,GameObject.LocalRotation.Yaw() + RotatePerFrame,0);
-
-		GameObject.LocalRotation = extraang;
 
 		float trailopen = DieTime.Passed/livetime * (1/peak);
 

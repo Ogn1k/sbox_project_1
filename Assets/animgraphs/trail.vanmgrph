@@ -9,13 +9,66 @@
 			{
 				key = 
 				{
+					m_id = 32566221
+				}
+				value = 
+				{
+					_class = "CBoneMaskAnimNode"
+					m_sName = "Unnamed"
+					m_vecPosition = [ -144.0, -48.0 ]
+					m_nNodeID = 
+					{
+						m_id = 32566221
+					}
+					m_sNote = ""
+					m_weightListName = "base_rotation"
+					m_inputConnection1 = 
+					{
+						m_nodeID = 
+						{
+							m_id = 1851159748
+						}
+						m_outputID = 
+						{
+							m_id = 4294967295
+						}
+					}
+					m_inputConnection2 = 
+					{
+						m_nodeID = 
+						{
+							m_id = 752801571
+						}
+						m_outputID = 
+						{
+							m_id = 4294967295
+						}
+					}
+					m_blendSpace = "BlendSpace_Parent"
+					m_bUseBlendScale = false
+					m_blendValueSource = "Parameter"
+					m_blendParameter = 
+					{
+						m_id = 4294967295
+					}
+					m_timingBehavior = "UseChild2"
+					m_flTimingBlend = 0.5
+					m_flRootMotionBlend = 0.0
+					m_footMotionTiming = "Child1"
+					m_bResetChild1 = true
+					m_bResetChild2 = true
+				}
+			},
+			{
+				key = 
+				{
 					m_id = 640367935
 				}
 				value = 
 				{
 					_class = "CRootAnimNode"
 					m_sName = "Unnamed"
-					m_vecPosition = [ -128.0, -32.0 ]
+					m_vecPosition = [ 64.0, -48.0 ]
 					m_nNodeID = 
 					{
 						m_id = 640367935
@@ -25,7 +78,7 @@
 					{
 						m_nodeID = 
 						{
-							m_id = 1851159748
+							m_id = 32566221
 						}
 						m_outputID = 
 						{
@@ -43,7 +96,7 @@
 				{
 					_class = "CSequenceAnimNode"
 					m_sName = "Unnamed"
-					m_vecPosition = [ -544.0, 16.0 ]
+					m_vecPosition = [ -672.0, -16.0 ]
 					m_nNodeID = 
 					{
 						m_id = 641990845
@@ -64,7 +117,7 @@
 				{
 					_class = "CSequenceAnimNode"
 					m_sName = "Unnamed"
-					m_vecPosition = [ -544.0, -80.0 ]
+					m_vecPosition = [ -672.0, -64.0 ]
 					m_nNodeID = 
 					{
 						m_id = 686941091
@@ -79,13 +132,66 @@
 			{
 				key = 
 				{
+					m_id = 719381609
+				}
+				value = 
+				{
+					_class = "CSequenceAnimNode"
+					m_sName = "Unnamed"
+					m_vecPosition = [ -688.0, 64.0 ]
+					m_nNodeID = 
+					{
+						m_id = 719381609
+					}
+					m_sNote = ""
+					m_tagSpans = [  ]
+					m_sequenceName = "trail_rotation_static"
+					m_playbackSpeed = 1.0
+					m_bLoop = false
+				}
+			},
+			{
+				key = 
+				{
+					m_id = 752801571
+				}
+				value = 
+				{
+					_class = "CSpeedScaleAnimNode"
+					m_sName = "Unnamed"
+					m_vecPosition = [ -384.0, 48.0 ]
+					m_nNodeID = 
+					{
+						m_id = 752801571
+					}
+					m_sNote = ""
+					m_inputConnection = 
+					{
+						m_nodeID = 
+						{
+							m_id = 719381609
+						}
+						m_outputID = 
+						{
+							m_id = 4294967295
+						}
+					}
+					m_param = 
+					{
+						m_id = 1498961211
+					}
+				}
+			},
+			{
+				key = 
+				{
 					m_id = 1851159748
 				}
 				value = 
 				{
 					_class = "CBlendAnimNode"
 					m_sName = "Unnamed"
-					m_vecPosition = [ -336.0, -32.0 ]
+					m_vecPosition = [ -368.0, -48.0 ]
 					m_nNodeID = 
 					{
 						m_id = 1851159748
@@ -166,6 +272,20 @@
 				m_fDefaultValue = 0.0
 				m_fMinValue = 0.0
 				m_fMaxValue = 1.0
+			},
+			{
+				_class = "CFloatAnimParameter"
+				m_name = "speed"
+				m_id = 
+				{
+					m_id = 1498961211
+				}
+				m_previewButton = "ANIMPARAM_BUTTON_NONE"
+				m_bUseMostRecentValue = false
+				m_bAutoReset = false
+				m_fDefaultValue = 0.2
+				m_fMinValue = 0.1
+				m_fMaxValue = 2.0
 			},
 		]
 	}

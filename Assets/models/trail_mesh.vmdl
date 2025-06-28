@@ -193,9 +193,40 @@
 						reverse = false
 					},
 					{
-						_class = "1DBlend"
-						name = "main_action"
-						activity_name = "trail_idle"
+						_class = "AnimFile"
+						name = "trail_rotation_delta"
+						children = 
+						[
+							{
+								_class = "AnimSubtract"
+								anim_name = "trail_rotation_delta"
+								frame = 0
+							},
+						]
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = "base_rotation"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = true
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/trail_anims.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						take = 2
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "trail_rotation_static"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -208,18 +239,12 @@
 						disable_compression = false
 						disable_interpolation = false
 						enable_scale = false
-						poseParam = "trail_open"
-						blendList = 
-						[
-							{
-								name = "trail_closed"
-								weight = 0.0
-							},
-							{
-								name = "trail_open"
-								weight = 1.0
-							},
-						]
+						source_filename = "models/trail_anims.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						take = 2
+						reverse = false
 					},
 				]
 				default_root_bone_name = ""
