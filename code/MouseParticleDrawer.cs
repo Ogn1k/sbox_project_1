@@ -29,12 +29,12 @@ public sealed class MouseParticleDrawer : Component
 
         if (isLocked)
         {
-            Mouse.Visible = true;
+            Mouse.Visibility = MouseVisibility.Visible;
 
         }
         else
         {
-            Mouse.Visible = false;
+            Mouse.Visibility = MouseVisibility.Hidden;
        }
     }
 
@@ -74,8 +74,8 @@ public sealed class MouseParticleDrawer : Component
             if (ParticlePrefab != null)
             {
                 var particle = ParticlePrefab.Clone();
-                particle.Transform.Position = trace.HitPosition;
-                particle.Transform.Rotation = Rotation.Identity;
+                particle.WorldPosition = trace.HitPosition;
+                particle.WorldRotation = Rotation.Identity;
 
                 _ = DestroyAfterDelay(particle, ParticleLifetime);
             }
